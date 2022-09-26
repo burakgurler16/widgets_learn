@@ -11,7 +11,7 @@ class ScaffoldLearnView extends StatelessWidget {
         title: const Text('Scaffold Samples'),
       ),
       //  AppBar End// //
-      body: const Text('Body is here'),
+      body: const Center(child: Text('Body is here')),
       // Body End //
       backgroundColor: Colors.red[200],
       ////
@@ -30,6 +30,8 @@ class ScaffoldLearnView extends StatelessWidget {
               context: context,
               builder: (context) => Container(
                     height: 200,
+                    alignment: Alignment.centerRight,
+                    child: const Text('Show Modal Bottom Sheet is here (CenterRight)'),
                   ));
         },
       ),
